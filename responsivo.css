@@ -1,0 +1,61 @@
+@media screen and (max-width: 750px) {
+
+    .produto .electro {
+        display: inline;
+        margin: 20px;
+        background-color: black;
+        flex-direction: column;
+    }
+
+    .produto .electro .phone .cell {
+        display: none;
+        flex-direction: column;
+    }
+
+    .produto .electro .not {
+        display: none;
+        flex-direction: column;
+    }
+
+    .electro li {
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .propaganda .slide img{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .produts p span{
+        font-size: 30px;
+        flex-direction: column;
+    }
+
+    .carrosel .produt{
+        min-width: 59%;
+        margin: 0 10px 0 0;
+    }
+
+    .detalhe, .button{
+        font-size: 16px;
+        flex-direction: column;
+    }
+
+    .produt picture img{
+        width: calc(100% / 2);
+    }
+
+    a{
+        padding: 6px 10px;
+    }
+
+    @media screen and (max-width: 550px) {
+        .produt picture img{
+            width: 100%;
+        }
+        .produt .detalhe{
+            flex-direction: column;
+        }
+    }
+}

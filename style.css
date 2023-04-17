@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+.header .logo img {
+    width: 70px;
+    height: 70px;
+}
+
+body {
+    position: relative;
+    font-family: 'hanken grotesk';
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.header {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+.header .logo a {
+    white-space: nowrap;
+}
+
+.header .fa-regular.fa-user {
+    display: flex;
+    justify-content: center;
+    font-size: 29px;
+}
+
+.header .pesquisa .fa-solid.fa-magnifying-glass {
+    font-size: 20px;
+}
+
+.header .carrinho li {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.header .logo a h1:hover {
+    color: aqua;
+    transition: 0.6s;
+}
+
+.header .carrinho li a:hover {
+    color: aqua;
+    transition: 0.7s;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.header .carrinho .fa-regular.fa-user:hover {
+    color: aqua;
+    transition: 0.7s;
+}
+
+.produto .electro li a {
+    color: #fff;
+}
+
+.produto .electro li {
+    margin: 10px;
+}
+
+.produto {
+    background-color: black;
+}
+
+.produto .electro {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.produto .electro li i {
+    margin: 10px;
+    color: #fff;
+}
+
+.produto .electro .not a:hover {
+    color: aqua;
+    position: relative;
+}
+
+.produto .electro .not a {
+    display: block;
+    color: #fff;
+    margin: 25px;
+}
+
+.produto .electro .not {
+    display: none;
+    position: absolute;
+}
+
+.electro .abrir:hover .not {
+    z-index: 1;
+    display: block;
+    background-color: black;
+}
+
+.produto .electro .cell a {
+    display: block;
+    color: #fff;
+    padding: 20px;
+}
+
+.produto .electro .cell a:hover {
+    color: aqua;
+    position: relative;
+}
+
+.produto .electro .cell {
+    display: none;
+    background-color: black;
+}
+
+.electro .phone:hover .cell {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.produto .electro .pc a {
+    display: block;
+    color: #fff;
+    padding: 20px;
+}
+
+.produto .electro .pc a:hover {
+    color: aqua;
+    position: relative;
+}
+
+.electro .pcg .pc {
+    display: none;
+    background-color: black;
+}
+
+.electro .pcg:hover .pc {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.produto .electro .tv a {
+    display: block;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.produto .electro .tele a:hover {
+    color: aqua;
+    position: relative;
+}
+
+.electro .tele .tv {
+    display: none;
+    background-color: black;
+}
+
+.electro .tele:hover .tv {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.produto .electro .monitor a {
+    display: block;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.produto .electro .moni a:hover {
+    color: aqua;
+    position: relative;
+}
+
+.electro .moni .monitor {
+    display: none;
+    background-color: black;
+}
+
+.electro .moni:hover .monitor {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.propaganda {
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.propaganda .slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(1);
+    position: relative;
+}
+
+.propaganda .slide img {
+    position: static;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.produts h2 {
+    margin: 25px;
+}
+
+.produts p span {
+    left: 20px;
+    position: relative;
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #555;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.produts p span:hover {
+    background-color: #222;
+    color: white;
+}
+
+
+.carrosel {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 98%;
+    height: 600px;
+    overflow-x: auto;
+    position: relative;
+}
+
+.carrosel::-webkit-scrollbar {
+    display: none;
+}
+
+.carrosel .produt picture img {
+    width: 100%;
+}
+
+.carrosel .produt {
+    min-width: 25%;
+    height: 90%;
+    background: whitesmoke;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.carrosel .produt picture {
+    width: 90%;
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.carrosel .produt .detalhe {
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    color: #444;
+}
+
+small {
+    color: #555;
+    font-size: 20px;
+}
+
+.carrosel .produt .button a {
+    text-decoration: none;
+    padding: 6px 14px;
+    font-size: 15px;
+    margin: 5px 0 20px;
+    display: inline-block;
+    background: #6773ff;
+    color: #fff;
+    right: 30px;
+    position: relative;
+}
+
+.carrosel .star {
+    margin: 5px auto;
+    font-size: 15px;
+    color: #808080;
+    position: relative;
+    right: 110px;
+    font-size: 20px;
+}
+
+.carrosel .produt .button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.baixo .comprar {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+    font-size: 20px;
+}
+
+.baixo .comprar h2 {
+    position: relative;
+    left: 700px;
+    white-space: nowrap;
+}
+
+
+.baixo .comprar {
+    height: 400px;
+}
+
+.baixo .comprar .porque i {
+    color: rgb(68, 68, 219);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.baixo .comprar .porque {
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    right: 200px;
+    top: 130px;
+    width: 400px;
+    height: 200px;
+    box-shadow: #444;
+    background-color: #e1e1e1;
+    padding: 20px;
+    margin: 20px;
+}
+
+section .duvidas {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+
+}
+
+section .duvidas h1 {
+    cursor: pointer;
+    position: relative;
+    left: 750px;
+    color: rgb(68, 68, 219);
+}
+
+section .duvidas .items {
+    margin: 70px;
+    background-color: #e1e1e1;
+    border-radius: 10px;
+    width: 1300px;
+    height: 500px;
+    padding: 30px;
+}
+
+section .duvidas .items .item {
+    margin: 20px;
+}
+
+footer .baixo {
+    border-bottom: 2px solid #222;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .baixo h2 {
+    color: rgb(68, 68, 219);
+}
+
+footer .baixo .redes i{
+    font-size: 20px;
+    margin: 20px;
+    color: rgb(68, 68, 219);
+}
+
+footer .baixo .online{
+    margin: 20px;
+    cursor: pointer;
+}
